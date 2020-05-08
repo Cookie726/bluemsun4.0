@@ -1,0 +1,32 @@
+{
+  "name": "bluemsun4.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "concurrently -n \"server,client\" -c \"bgMagenta.black,bgBlue.black\" --handle-input \"npm run dev:server\" \"npm run dev:client\"",
+    "download": "concurrently -n \"server,client\" -c \"bgMagenta.black,bgBlue.black\" --handle-input \"npm run download:client\" \"npm run download:server\"",
+    "download:client": "cd ./packages/client && npm install",
+    "download:server": "cd ./packages/server && npm install",
+    "dev:client": "cd packages/client && npm run dev",
+    "dev:server": "cd packages/server && npm run dev",
+    "build:client": "cd packages/client && npm run build",
+    "build:server": "cd packages/server && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuaGod/bluemsun4.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuaGod/bluemsun4.0/issues"
+  },
+  "homepage": "https://github.com/GuaGod/bluemsun4.0#readme",
+  "devDependencies": {
+    "concurrently": "^5.0.2"
+  }
+}

@@ -1,0 +1,45 @@
+.container {
+    margin-top: 6px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(7, 17, 27, 0.2);
+    margin-bottom: 6px;
+
+    .button_container {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        border-bottom: 3px dotted #E9E9E9;
+        color: #333;
+        opacity: 0.8;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 2px 2px 0 0;
+        font-size: 14px;
+        cursor: pointer;
+
+        li {
+            list-style: none;
+        }
+
+        .tab_container {
+            transform: translateY(6px);
+        }
+    }
+
+    .inviation_container {
+        min-height: 840px;
+    }
+
+    .invitation_none_tip {
+        height: 300px;
+        line-height: 280px;
+        text-align: center;
+        font-size: 30px;
+        color: rgba(7, 17, 27, 0.6);
+    }
+
+    .naviagte_container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
